@@ -12,4 +12,4 @@ Install the theme;
 
 Update the theme if needed;
 
-```cd ./themes/boostrap && git pull```
+```cd .themes/bootstrap && git pull```
