@@ -20,7 +20,8 @@
   {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
   {% if excerpted == 'true' %}
     <footer>
-      <a rel="full-article" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>
+      <a rel="full-article" class="btn btn-large" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>
+      <hr style="border: 2px dashed #fff" color="#333" size="6">
     </footer>
   {% endif %}
 {% else %}
