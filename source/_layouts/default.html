@@ -1,0 +1,16 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<body onload="init()" {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
+  <nav role="navigation">{% include navigation.html %}</nav>
+  <div class="container">
+  	<a href="{{ root_url }}/"><canvas id="myCanvas" width="380" height="175"
+		onmousemove="handleMouseMove(event)"
+		onmouseout="handleMouseOut()"></canvas></a>
+    <div class="row-fluid">
+      {{ content | expand_urls: root_url }}
+    </div>
+  </div>
+  <footer role="contentinfo" class="page-footer">{% include footer.html %}</footer>
+  {% include after_footer.html %}
+</body>
+</html>
