@@ -34,7 +34,8 @@ group :octopress do
 end
 ```
 
-You will then need two other things. The "./plugins/" directory from [octopress](https://github.com/imathis/octopress "Octopress"), and the "Rakefile" I have tweaked here.
+You will then need two other things. The "./plugins/" directory & "_config.yml" from [octopress](https://github.com/imathis/octopress "Octopress"), and the "Rakefile" I have tweaked and linked below.
 This is a working Rakefile, so replace yours with it, do not add it to what you have.
 https://github.com/hfase01/diaspora/blob/HFASE/Rakefile
 
+You may also need to edit a few things I have not yet un-hard-coded. :)
