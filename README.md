@@ -13,3 +13,28 @@ Install the theme;
 Update the theme if needed;
 
 ```cd .themes/bootstrap && git pull```
+
+***
+
+To use this with Disapora or Octopress the instructions above are the same.
+
+To add Octopress to Diaspora just include this group in your "Gemfile",
+
+```
+group :octopress do
+  gem 'jekyll', '~> 0.11.2'
+  gem 'rdiscount', '~> 1.6.8'
+  gem 'pygments.rb', '~> 0.2.12'
+  gem 'RedCloth', '~> 4.2.9'
+  gem 'rubypants', '~> 0.2.0'
+  gem 'rb-fsevent', '~> 0.9'
+  gem 'stringex', '~> 1.4.0'
+  gem 'liquid', '~> 2.3.0'
+  gem 'sinatra', '~> 1.3.2'
+end
+```
+
+You will then need two other things. The "./plugins/" directory from Octopress, and the "Rakefile" I have tweaked here.
+This is a working Rakefile, so replace yours with it, do not add it to what you have.
+https://github.com/hfase01/diaspora/blob/HFASE/Rakefile
+
